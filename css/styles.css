@@ -1,3 +1,8 @@
-/* #output{
-  display: none;
-} */
+#head{
+  text-align: center;
+  margin: 20px;
+}
+
+  body{
+    background-color: rgb(106, 185, 255);
+  }
