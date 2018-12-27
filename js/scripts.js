@@ -1,67 +1,67 @@
-var finalGrade=0;
+var result=0;
 function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty){
     
   if(one==="d"){
-       finalGrade+=2;
+       result+=2;
 }
   if(two==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(three==="c"){
-    finalGrade+=2;
+    result+=2;
   }
   if(four==="a"){
-    finalGrade+=2;
+    result+=2;
   }
   if(five==="c"){
-    finalGrade+=2;
+    result+=2;
   }
   if(six==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(seven==="b"){
-    finalGrade+=2;
+    result+=2;
   }
   if(eight==="c"){
-    finalGrade+=2;
+    result+=2;
   }
   if(nine==="a"){
-    finalGrade+=2;
+    result+=2;
   }
   if(ten==="b"){
-    finalGrade+=2;
+    result+=2;
   }
   if(eleven==="b"){
-    finalGrade+=2;
+    result+=2;
   }
   if(twelve==="b"){
-    finalGrade+=2;
+    result+=2;
   }
   if(thirteen==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(fourteen==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(fifteen==="a"){
-    finalGrade+=2;
+    result+=2;
   }
   if(sixteen==="c"){
-    finalGrade+=2;
+    result+=2;
   }
   if(seventeen==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(eighteen==="d"){
-    finalGrade+=2;
+    result+=2;
   }
   if(nineteen==="c"){
-    finalGrade+=2;
+    result+=2;
   }
   if(twenty==="c"){
-    finalGrade+=2;
+    result+=2;
   }
-  return finalGrade;
+  return result;
 
 }
 
@@ -90,10 +90,10 @@ $(document).ready(function(){
     var answer12=$("input:radio[name=question12]:checked").val();
     var answer13=$("input:radio[name=question13]:checked").val();
     var answer14=$("input:radio[name=question14]:checked").val();
-    var answer15=$("input:radio[name=question15:checked").val();
+    var answer15=$("input:radio[name=question15]:checked").val();
     correctionOfQuiz(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
-    $("#phrase").show();
-    display(finalGrade);
-    $("form#quiz").hide();
+    $("#output").show();
+    display(result);
+    $("form#quiz").toggle();
   });
 });
