@@ -6,3 +6,13 @@
   body{
     background-color: rgb(106, 185, 255);
   }
+
+  #output{
+    display:none;
+  }
+
+  button{
+    background-color:black;
+    color: white;
+    height: 50px;
+  }
