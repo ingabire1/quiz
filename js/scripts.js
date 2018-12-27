@@ -50,8 +50,8 @@ function correction(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twel
 
 }
 
-function forDisplay(final){
-  document.getElementById("grade").innerHTML=final;
+function forDisplay(finalScore){
+  document.getElementById("grade").innerHTML=finalScore;
 }
 
 
@@ -78,7 +78,9 @@ $(document).ready(function(){
     var answer15=$("input:radio[name=question15]:checked").val();
     correction(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15);
     $("#output").show();
-    forDisplay(result);
     $("form#quiz").hide();
+
+    forDisplay(result);
+    
   });
 });
