@@ -20,9 +20,6 @@ This is webpage containing a javascript quiz,it contains 15 fifteen questions an
    * Input Example: select 5 wrong answers
     * Output Example: Your final score is 10
 
-
-## Known Bugs
-There are no known bugs yet.
 ## Technologies Used
 
 *  HTML 
