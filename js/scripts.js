@@ -1,71 +1,56 @@
 var result=0;
-function correctionOfQuiz(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,nineteen,twenty){
+function correction(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen){
     
   if(one==="d"){
-       result+=2;
+    result+=1;
 }
   if(two==="d"){
-    result+=2;
+    result+=1;
   }
   if(three==="c"){
-    result+=2;
+    result+=1;
   }
   if(four==="a"){
-    result+=2;
+    result+=1;
   }
   if(five==="c"){
-    result+=2;
+    result+=1;
   }
   if(six==="d"){
-    result+=2;
+    result+=1;
   }
   if(seven==="b"){
-    result+=2;
+    result+=1;
   }
   if(eight==="c"){
-    result+=2;
+    result+=1;
   }
   if(nine==="a"){
-    result+=2;
+    result+=1;
   }
   if(ten==="b"){
-    result+=2;
+    result+=1;
   }
   if(eleven==="b"){
-    result+=2;
+    result+=1;
   }
   if(twelve==="b"){
-    result+=2;
+    result+=1;
   }
   if(thirteen==="d"){
-    result+=2;
+    result+=1;
   }
   if(fourteen==="d"){
-    result+=2;
+    result+=1;
   }
   if(fifteen==="a"){
-    result+=2;
-  }
-  if(sixteen==="c"){
-    result+=2;
-  }
-  if(seventeen==="d"){
-    result+=2;
-  }
-  if(eighteen==="d"){
-    result+=2;
-  }
-  if(nineteen==="c"){
-    result+=2;
-  }
-  if(twenty==="c"){
-    result+=2;
+    result+=1;
   }
   return result;
 
 }
 
-function display(final){
+function forDisplay(final){
   document.getElementById("score").innerHTML=final;
 }
 
@@ -91,9 +76,9 @@ $(document).ready(function(){
     var answer13=$("input:radio[name=question13]:checked").val();
     var answer14=$("input:radio[name=question14]:checked").val();
     var answer15=$("input:radio[name=question15]:checked").val();
-    correctionOfQuiz(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15,answer16,answer17,answer18,answer19,answer20);
+    correction(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15);
     $("#output").show();
-    display(result);
-    $("form#quiz").toggle();
+    forDisplay(result);
+    $("form#quiz").hide();
   });
 });
