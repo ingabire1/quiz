@@ -51,7 +51,7 @@ function correction(one,two,three,four,five,six,seven,eight,nine,ten,eleven,twel
 }
 
 function forDisplay(final){
-  document.getElementById("score").innerHTML=final;
+  document.getElementById("grade").innerHTML=final;
 }
 
 
@@ -76,6 +76,7 @@ $(document).ready(function(){
     var answer13=$("input:radio[name=question13]:checked").val();
     var answer14=$("input:radio[name=question14]:checked").val();
     var answer15=$("input:radio[name=question15]:checked").val();
+    console.log(answer14)
     correction(answer1,answer2,answer3,answer4,answer5,answer6,answer7,answer8,answer9,answer10,answer11,answer12,answer13,answer14,answer15);
     $("#output").show();
     forDisplay(result);
